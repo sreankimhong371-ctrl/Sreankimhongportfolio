@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srean Kimhong — Graphic Designer</title>
+  <meta name="description" content="Srean Kimhong — a creative and hardworking graphic designer passionate about turning ideas into eye-catching visuals. Based in Cambodia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-progress" id="pageProgress"></div>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor">✦</div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">SK<span class="loader-dot">.</span></div>
+      <div class="loader-tagline">Brewing creativity...</div>
+      <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+      <div class="loader-icons">🎨 ✦ 🖌️ ✦ ✏️</div>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="nav-logo-text">SK<span class="accent">.</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home"      class="nav-link" id="nav-home">Home</a></li>
+      <li><a href="#about"     class="nav-link" id="nav-about">About</a></li>
+      <li><a href="#skills"    class="nav-link" id="nav-skills">Skills</a></li>
+      <li><a href="#portfolio" class="nav-link" id="nav-portfolio">Work</a></li>
+      <li><a href="#contact"   class="nav-link" id="nav-contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-nav" id="hire-btn">Hire Me ✦</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home"      class="mobile-link">Home</a></li>
+      <li><a href="#about"     class="mobile-link">About</a></li>
+      <li><a href="#skills"    class="mobile-link">Skills</a></li>
+      <li><a href="#portfolio" class="mobile-link">Work</a></li>
+      <li><a href="#contact"   class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+    <div class="doodle doodle-star d1">✦</div>
+    <div class="doodle doodle-star d2">✶</div>
+    <div class="doodle doodle-star d3">◆</div>
+    <div class="doodle doodle-star d4">✦</div>
+    <div class="doodle doodle-circle dc1"></div>
+    <div class="doodle doodle-circle dc2"></div>
+    <div class="doodle doodle-ring dr1"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Freelance Work ✦
+      </div>
+
+      <div class="hero-greeting">Hello! I'm</div>
+      <h1 class="hero-title">
+        <span class="hero-name">Srean <span class="gradient-text">Kimhong</span></span>
+      </h1>
+
+      <div class="hero-role-wrap">
+        <div class="hero-role">
+          <span class="role-emoji">🎨</span>
+          <span>Graphic Designer</span>
+        </div>
+        <div class="hero-role-sub">Visual Creator &amp; Brand Storyteller</div>
+      </div>
+
+      <p class="hero-sub">
+        Turning <span class="highlight">ideas</span> into eye-catching visuals.<br/>
+        Hardworking · Creative · Always learning.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary" id="view-work-btn">
+          See My Posters
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#contact" class="btn btn-outline" id="get-touch-btn">Let's Talk 💬</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <span class="stat-emoji">🖼️</span>
+          <div>
+            <span class="stat-number" data-target="12">0</span>+
+            <span class="stat-label">Projects</span>
+          </div>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-emoji">🏆</span>
+          <div>
+            <span class="stat-number" data-target="1">0</span>
+            <span class="stat-label">Certificate</span>
+          </div>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-emoji">⚡</span>
+          <div>
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-label">Tools</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual hero-id-visual">
+      <div class="lanyard">
+        <span class="lanyard-line"></span>
+        <span class="lanyard-ring"></span>
+        <span class="lanyard-hook"></span>
+      </div>
+
+      <div class="profile-id-card" id="profileIdCard">
+        <div class="id-card-shine"></div>
+
+        <div class="id-card-header">
+          <span class="id-brand">SK<span>.</span></span>
+          <span class="id-status">PORTFOLIO</span>
+        </div>
+
+        <div class="id-photo-wrap">
+          <div class="id-photo-frame">
+            <img src="images/photo_2026-08-18_14-59-38.jpg" alt="Srean Kimhong" class="id-photo" />
+          </div>
+        </div>
+
+        <div class="id-info">
+          <span class="id-role">GRAPHIC DESIGNER</span>
+          <h2>Srean Kimhong</h2>
+          <p>Visual Creator · Brand Storyteller</p>
+        </div>
+
+        <div class="id-divider"></div>
+
+        <div class="id-bottom">
+          <div>
+            <span class="id-small-label">SPECIALITY</span>
+            <strong>Brand • Poster • Visual</strong>
+          </div>
+          <div class="id-mark">✦</div>
+        </div>
+      </div>
+
+      <div class="id-floating-note note-one">✦ CREATIVE</div>
+      <div class="id-floating-note note-two">CONTACT NOW</div>
+    </div>
+
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-items">
+        <span>Poster Design</span><span class="sep">✦</span>
+        <span>Logo &amp; Branding</span><span class="sep">✦</span>
+        <span>Social Media</span><span class="sep">✦</span>
+        <span>Layout Design</span><span class="sep">✦</span>
+        <span>Video Editing</span><span class="sep">✦</span>
+        <span>Typography</span><span class="sep">✦</span>
+        <span>Event Visuals</span><span class="sep">✦</span>
+        <span>Brand Identity</span><span class="sep">✦</span>
+        <span>Poster Design</span><span class="sep">✦</span>
+        <span>Logo &amp; Branding</span><span class="sep">✦</span>
+        <span>Social Media</span><span class="sep">✦</span>
+        <span>Layout Design</span><span class="sep">✦</span>
+        <span>Video Editing</span><span class="sep">✦</span>
+        <span>Typography</span><span class="sep">✦</span>
+        <span>Event Visuals</span><span class="sep">✦</span>
+        <span>Brand Identity</span><span class="sep">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>About Me</span>
+        <span class="label-emoji">👋</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-big">
+            <div class="acb-top">
+              <div class="acb-initials">About Me</div>
+              <div class="acb-dots">
+                <span class="acb-dot red"></span>
+                <span class="acb-dot yellow"></span>
+                <span class="acb-dot green"></span>
+              </div>
+            </div>
+            <div class="acb-name">Srean Kimhong</div>
+            <div class="acb-title">🎨 Graphic Designer</div>
+            <div class="acb-lang">
+              <span class="lang-badge"> Khmer</span>
+              <span class="lang-badge"> English</span>
+            </div>
+            <div class="acb-softskills">
+              <span>💡 Creative</span>
+              <span>🤝 Teamwork</span>
+              <span>⏰ Punctual</span>
+            </div>
+          </div>
+          <div class="sticker s1">🎨<br/><small>Design Lover</small></div>
+          <div class="sticker s2">📸<br/><small>Photographer</small></div>
+          <div class="sticker s3">🔥<br/><small>Videographer</small></div>
+        </div>
+
+        <div class="about-content">
+          <h2 class="section-title">
+            I turn <span class="gradient-text">ideas</span> into<br/>
+            <span class="hand-text">eye-catching visuals!</span>
+          </h2>
+          <p class="about-text">
+            I'm a hardworking and creative student with strong motivation and a passion for graphic design. I'm good at finding new ideas and always put full effort into every task assigned to me, especially turning ideas into eye-catching visuals.
+          </p>
+          <p class="about-text">
+            I am responsible, eager to learn, and able to complete my work on time. I have designed posters and social media content, developed logo concepts for imaginary brands — and I'm just getting started! 🚀
+          </p>
+
+          <div class="fun-facts">
+            <div class="fun-fact ff1">
+              <span class="ff-icon">📍</span>
+              <div>
+                <span class="ff-label">Based in</span>
+                <span class="ff-val">Cambodia</span>
+              </div>
+            </div>
+            <div class="fun-fact ff2">
+              <span class="ff-icon">🎓</span>
+              <div>
+                <span class="ff-label">Studying at</span>
+                <span class="ff-val">SETEC Institute</span>
+              </div>
+            </div>
+            <div class="fun-fact ff3">
+              <span class="ff-icon">🏆</span>
+              <div>
+                <span class="ff-label">Achievement</span>
+                <span class="ff-val">Internship Certificate.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-details-grid">
+            <div class="about-detail-block">
+              <h4 class="about-detail-title">🤝 Soft Skills</h4>
+              <div class="soft-skill-pills">
+                <span class="soft-pill">💡 Creativity</span>
+                <span class="soft-pill">🤝 Teamwork</span>
+                <span class="soft-pill">⏰ Time Management</span>
+              </div>
+            </div>
+
+            <div class="about-detail-block">
+              <h4 class="about-detail-title">🌍 Languages</h4>
+              <div class="lang-pills">
+                <span class="lang-pill"> Khmer — Native</span>
+                <span class="lang-pill"> English — Conversational</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#portfolio" class="btn btn-primary" id="see-portfolio-btn">View My Posters ✦</a>
+            <a href="mailto:Sreankimhong371@email.com" class="btn btn-ghost" id="email-btn">
+              📧 Email Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Skills</span>
+        <span class="label-emoji">🛠️</span>
+      </div>
+      <h2 class="section-title center">
+        My <span class="gradient-text">Superpowers</span> ⚡
+      </h2>
+
+      <div class="skills-two-col">
+        <div class="skills-col">
+          <h3 class="skills-col-title">🖥️ Software Skills</h3>
+          <div class="software-skills">
+            <div class="sw-skill" data-delay="0">
+              <div class="sw-header">
+                <div class="sw-icon ps-icon">Ps</div>
+                <span class="sw-name">Adobe Photoshop</span>
+                <span class="sw-pct">68%</span>
+              </div>
+              <div class="sw-bar"><div class="sw-fill" data-width="68" style="--clr:#3b82f6"></div></div>
+            </div>
+
+            <div class="sw-skill" data-delay="100">
+              <div class="sw-header">
+                <div class="sw-icon ai-icon">Ai</div>
+                <span class="sw-name">Adobe Illustrator</span>
+                <span class="sw-pct">50%</span>
+              </div>
+              <div class="sw-bar"><div class="sw-fill" data-width="50" style="--clr:#60a5fa"></div></div>
+            </div>
+
+            <div class="sw-skill" data-delay="200">
+              <div class="sw-header">
+                <div class="sw-icon id-icon">Id</div>
+                <span class="sw-name">Adobe InDesign</span>
+                <span class="sw-pct">55%</span>
+              </div>
+              <div class="sw-bar"><div class="sw-fill" data-width="55" style="--clr:#818cf8"></div></div>
+            </div>
+
+            <div class="sw-skill" data-delay="300">
+              <div class="sw-header">
+                <div class="sw-icon ae-icon">Ae</div>
+                <span class="sw-name">Adobe After Effects</span>
+                <span class="sw-pct">20%</span>
+              </div>
+              <div class="sw-bar"><div class="sw-fill" data-width="20" style="--clr:#a78bfa"></div></div>
+            </div>
+
+            <div class="sw-skill" data-delay="400">
+              <div class="sw-header">
+                <div class="sw-icon pr-icon">Pr</div>
+                <span class="sw-name">Adobe Premiere Pro</span>
+                <span class="sw-pct">20%</span>
+              </div>
+              <div class="sw-bar"><div class="sw-fill" data-width="20" style="--clr:#c084fc"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-col">
+          <h3 class="skills-col-title">🎨 Design Skills</h3>
+          <div class="design-skill-tags">
+            <div class="ds-tag"><span class="ds-icon">🖼️</span>Poster &amp; Social Media Design</div>
+            <div class="ds-tag"><span class="ds-icon">🔷</span>Logo &amp; Branding Design</div>
+            <div class="ds-tag"><span class="ds-icon">🎬</span>Basic Video Editing</div>
+            <div class="ds-tag"><span class="ds-icon">📰</span>Layout &amp; Magazine Design</div>
+            <div class="ds-tag"><span class="ds-icon">🔍</span>Strong Attention to Detail</div>
+            <div class="ds-tag"><span class="ds-icon">💡</span>Creative Thinking &amp; Visual</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE + EDUCATION ========== -->
+  <section class="timeline-section" id="experience">
+    <div class="container">
+      <div class="timeline-two-col">
+
+        <div>
+          <div class="section-label">
+            <span class="label-line"></span>
+            <span>Experience</span>
+            <span class="label-emoji">💼</span>
+          </div>
+
+          <div class="timeline">
+            <div class="tl-item" id="exp-1">
+              <div class="tl-dot"><span>🎨</span></div>
+              <div class="tl-card">
+                <div class="tl-tag">Internship</div>
+                <h3 class="tl-title">Graphic Designer</h3>
+                <div class="tl-company">Origins Studio</div>
+                <ul class="tl-bullets">
+                  <li>Designed event visuals for iCAUR Chery Cambodia, including photobooth</li>
+                  <li>Created logo designs and branding materials for various clients and projects</li>
+                  <li>Designed posters and promotional graphics for marketing and social media use</li>
+                  <li>Assisted in short video editing for digital content and campaigns</li>
+                </ul>
+                <div class="tl-achievement">
+                  🏆 Certificate of Completion — Graphic Design Internship
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="tl-item" id="exp-1">
+              <div class="tl-dot"><span>🎨</span></div>
+              <div class="tl-card">
+                <div class="tl-tag">Competition</div>
+                <h3 class="tl-title">Spider-Man Fan Art challenge</h3>
+                <div class="tl-company">Legend Cinemas</div>
+                <!-- <ul class="tl-bullets">
+                  <li>Designed event visuals for iCAUR Chery Cambodia, including photobooth</li>
+                  <li>Created logo designs and branding materials for various clients and projects</li>
+                  <li>Designed posters and promotional graphics for marketing and social media use</li>
+                  <li>Assisted in short video editing for digital content and campaigns</li>
+                </ul> -->
+                <div class="tl-achievement">
+                  🏆 2x Screen X Ticket For Spider-Man Brand New Day Movie
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-label">
+            <span class="label-line"></span>
+            <span>Education</span>
+            <span class="label-emoji">🎓</span>
+          </div>
+
+          <div class="timeline">
+            <div class="tl-item" id="edu-1">
+              <div class="tl-dot edu-dot"><span>🎓</span></div>
+              <div class="tl-card">
+                <div class="tl-tag edu-tag">2025 – Present</div>
+                <h3 class="tl-title">Bachelor's Degree</h3>
+                <div class="tl-company">Management Information System (MIS)</div>
+                <p class="tl-school">SETEC Institute</p>
+              </div>
+            </div>
+
+            <div class="tl-item" id="edu-2">
+              <div class="tl-dot edu-dot"><span>📚</span></div>
+              <div class="tl-card">
+                <div class="tl-tag edu-tag">2024</div>
+                <h3 class="tl-title">English Program</h3>
+                <div class="tl-company">Sovannaphumi School</div>
+              </div>
+            </div>
+
+            <div class="tl-item" id="edu-3">
+              <div class="tl-dot edu-dot"><span>🏫</span></div>
+              <div class="tl-card">
+                <div class="tl-tag edu-tag">2023 – 2024</div>
+                <h3 class="tl-title">High School Diploma</h3>
+                <div class="tl-company">Completed Successfully</div>
+              </div>
+            </div>
+
+            <div class="tl-item" id="edu-4">
+              <div class="tl-dot edu-dot"><span>✏️</span></div>
+              <div class="tl-card">
+                <div class="tl-tag edu-tag">2021</div>
+                <h3 class="tl-title">Grade 9 Completion</h3>
+                <div class="tl-company">Sereypheap High School</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POSTER SHOWCASE / PORTFOLIO ========== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Recent Artwork</span>
+        <span class="label-emoji">🖼️</span>
+      </div>
+      <h2 class="section-title center">
+        <span class="gradient-text">Posters & Visuals</span>
+      </h2>
+      <p class="section-sub center">
+        A dedicated gallery of event posters, brand visuals, and social media artwork created for clients.
+      </p>
+
+      <!-- <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all"      id="filter-all">All Posters ✦</button>
+        <button class="filter-tab" data-filter="event"    id="filter-event">Events</button>
+        <button class="filter-tab" data-filter="branding" id="filter-branding">Branding</button>
+        <button class="filter-tab" data-filter="social"   id="filter-social">Social Media</button>
+      </div> -->
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Poster Item 1 -->
+        <div class="portfolio-item" data-category="event">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="social media/cafe.png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster Item 2 -->
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="social media/Drink@3x.png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster Item 3 -->
+        <div class="portfolio-item" data-category="social">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="social media/Recreate Poster.png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster Item 4 -->
+        <div class="portfolio-item" data-category="event">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="social media/700723190_987347887388043_1321303449379939203_n.jpg" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster Item 5 -->
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="social media/KNY25.png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster Item 6 -->
+        <div class="portfolio-item" data-category="social">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="social media/KNY25 (2).png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="social"><div class="portfolio-card"><div class="portfolio-image"><img src="social media/50OFFDRINK_A4.png" alt="Drink promotion poster" class="poster-img" /></div></div></div>
+        <div class="portfolio-item" data-category="branding"><div class="portfolio-card"><div class="portfolio-image"><img src="social media/BAC_BN_1.png" alt="Brand poster" class="poster-img" /></div></div></div>
+        <div class="portfolio-item" data-category="branding"><div class="portfolio-card"><div class="portfolio-image"><img src="social media/BAC_BN_2.png" alt="Brand poster" class="poster-img" /></div></div></div>
+        <div class="portfolio-item" data-category="branding"><div class="portfolio-card"><div class="portfolio-image"><img src="social media/BAC_BN_3.png" alt="Brand poster" class="poster-img" /></div></div></div>
+        <div class="portfolio-item" data-category="event"><div class="portfolio-card"><div class="portfolio-image"><img src="social media/BAC_POSTER_V2.png" alt="Event poster" class="poster-img" /></div></div></div>
+        <div class="portfolio-item" data-category="branding"><div class="portfolio-card"><div class="portfolio-image"><img src="social media/Signature set 1 (1).png" alt="Signature design" class="poster-img" /></div></div></div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ========== POSTER SHOWCASE / PORTFOLIO ========== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Banner Design</span>
+        <span class="label-emoji">🖼️</span>
+      </div>
+      <h2 class="section-title center">
+        <span class="gradient-text">Banner Design</span>
+      </h2>
+      <p class="section-sub center">
+        A dedicated gallery of event posters, brand visuals, and social media artwork created for clients.
+      </p>
+
+      <!-- <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all"      id="filter-all">All Posters ✦</button>
+        <button class="filter-tab" data-filter="event"    id="filter-event">Events</button>
+        <button class="filter-tab" data-filter="branding" id="filter-branding">Branding</button>
+        <button class="filter-tab" data-filter="social"   id="filter-social">Social Media</button>
+      </div> -->
+
+      <div class="portfolio-grid banner-gallery" id="bannerGrid">
+
+        <!-- Poster Item 1 -->
+        <div class="portfolio-item" data-category="event">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="Banner/BAC_BANNER_1.png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster Item 2 -->
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="Banner/BAC_BANNER_2.png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster Item 3 -->
+        <div class="portfolio-item" data-category="social">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="Banner/BAC_BANNER_3.png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster Item 4 -->
+        <div class="portfolio-item" data-category="event">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="Banner/Gas Station.png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster Item 5 -->
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="Banner/Gas Station1.png" alt="Poster 1" class="poster-img" />
+            </div>
+            <div class="portfolio-info">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU DESIGN GALLERY ========== -->
+  <section class="portfolio menu-portfolio" id="menu-design">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Menu Design</span>
+        <span class="label-emoji">🍽️</span>
+      </div>
+      <h2 class="section-title center">
+        <span class="gradient-text">Menu Posters</span>
+      </h2>
+      <p class="section-sub center">
+        A collection of menu layouts and food-promotion designs.
+      </p>
+
+      <div class="portfolio-grid menu-gallery" id="menuGrid">
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1@4x-20.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1 copy@4x-100.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1 copy 2@4x-100.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1 copy 3@4x-100.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1 copy 5@4x-100.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1 copy 7@4x-100.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1 copy 8@4x-100.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1 copy 12@4x-100.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1 copy 13@4x-100.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="Menu/Artboard 1 copy 10@4x-100.jpg" alt="Menu design" class="poster-img" /></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MAGAZINE DESIGN GALLERY ========== -->
+  <section class="portfolio magazine-portfolio" id="magazine-design">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Magazine Design</span>
+        <span class="label-emoji">📖</span>
+      </div>
+      <h2 class="section-title center">
+        <span class="gradient-text">Magazine Pages</span>
+      </h2>
+      <p class="section-sub center">
+        Editorial layouts, spreads, and visual storytelling.
+      </p>
+
+      <div class="portfolio-grid magazine-gallery" id="magazineGrid">
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 151533.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 151544.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 151556.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 151608.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 151626.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 151635.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 151936.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/ដឹាដ.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 151944.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 152135.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 152152.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 152201.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 152209.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 152250.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 152316.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 152436.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/Screenshot 2026-07-22 152447.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="magazine/១២.png" alt="Magazine design page" class="poster-img" /></div></div></div>
+    </div>
+  </section>
+
+  <!-- ========== STICKER DESIGN BOARD ========== -->
+  <section class="portfolio sticker-portfolio" id="sticker-design">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Sticker Design</span>
+        <span class="label-emoji">✦</span>
+      </div>
+      <h2 class="section-title center">
+        <span class="gradient-text">Sticker Collection</span>
+      </h2>
+
+      <div class="sticker-board" id="stickerBoard">
+        <img src="Sticker/Asset 6@4x.png" alt="" />
+        <img src="Sticker/Asset 7@4x.png" alt="" />
+        <img src="Sticker/Asset 8@4x.png" alt="" />
+        <img src="Sticker/Asset 9@4x.png" alt="" />
+        <img src="Sticker/Asset 10@4x.png" alt="" />
+        <img src="Sticker/Asset 11@4x.png" alt="" />
+        <img src="Sticker/Asset 13@4x.png" alt="" />
+        <img src="Sticker/Asset 14@4x.png" alt="" />
+        <img src="Sticker/Asset 15@4x.png" alt="" />
+        <img src="Sticker/Asset 16@4x.png" alt="" />
+        <img src="Sticker/Asset 17@4x.png" alt="" />
+        <img src="Sticker/Asset 18@4x.png" alt="" />
+        <img src="Sticker/Asset 19@4x.png" alt="" />
+        <img src="Sticker/Asset 20@4x.png" alt="" />
+        <img src="Sticker/Asset 21@4x.png" alt="" />
+        <img src="Sticker/Asset 22@4x.png" alt="" />
+        <img src="Sticker/Asset 23@4x.png" alt="" />
+        <img src="Sticker/Asset 24@4x.png" alt="" />
+        <img src="Sticker/Asset 25@4x.png" alt="" />
+        
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMPLETED STICKER POSTERS ========== -->
+  <section class="portfolio sticker-done-portfolio" id="sticker-done">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Sticker Done</span>
+        <span class="label-emoji">✦</span>
+      </div>
+      <h2 class="section-title center">
+        <span class="gradient-text">Completed Sticker Designs</span>
+      </h2>
+
+      <div class="portfolio-grid sticker-done-gallery" id="stickerDoneGrid">
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="sticker done/712099653_1003604199095745_4941018644932041856_n.jpg" alt="Completed sticker poster" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="sticker done/712307025_1003604165762415_5810288777358099182_n.jpg" alt="Completed sticker poster" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="sticker done/712686452_1003604145762417_5786899062161586140_n.jpg" alt="Completed sticker poster" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="sticker done/714243683_1003604275762404_2622672984427353927_n.jpg" alt="Completed sticker poster" class="poster-img" /></div></div></div>
+        <div class="portfolio-item"><div class="portfolio-card"><div class="portfolio-image"><img src="sticker done/714486764_1003604259095739_3246091925047177778_n.jpg" alt="Completed sticker poster" class="poster-img" /></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Poster Full View" />
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Contact</span>
+        <span class="label-emoji">✉️</span>
+      </div>
+      <h2 class="section-title center">
+        Let's <span class="gradient-text">Create</span> Together! 🚀
+      </h2>
+      <p class="section-sub center">
+        Got a project? Let's make something awesome together.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-big-card">
+            <div class="cbc-emoji">👋</div>
+            <h3>Say Hello!</h3>
+            <p>I'd love to hear about your project idea — don't be shy!</p>
+
+            <div class="contact-items">
+              <a href="tel:+85516989848" class="contact-item" id="contact-phone">
+                <div class="contact-icon">📱</div>
+                <div>
+                  <span class="contact-label">Phone / WhatsApp</span>
+                  <span class="contact-value">+855 16 989 848</span>
+                </div>
+              </a>
+
+              <a href="mailto:Sreankimhong371@email.com" class="contact-item" id="contact-email">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">Sreankimhong371@email.com</span>
+                </div>
+              </a>
+
+              <a href="https://www.instagram.com/S_Kimhongg" target="_blank" class="contact-item" id="contact-social">
+                <div class="contact-icon">📸</div>
+                <div>
+                  <span class="contact-label">Instagram</span>
+                  <span class="contact-value">@S_Kimhongg</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name 😊</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email 📧</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">What's it about? 🎯</label>
+            <input type="text" id="subject" name="subject" placeholder="Logo Design, Poster, Social Media..." required />
+          </div>
+          <div class="form-group">
+            <label for="message">Tell me more! 💬</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your project idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="send-msg-btn">
+            <span id="sendBtnText">Send Message 🚀</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            🎉 Message sent! I'll get back to you soon!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">SK<span class="accent">.</span></div>
+        <p class="footer-name">Srean Kimhong</p>
+        <p class="footer-tagline">Graphic Designer · Visual Creator · Cambodia 🇰🇭</p>
+        <div class="footer-socials">
+          <a href="mailto:Sreankimhong371@email.com" class="social-link" id="social-email"   aria-label="Email">📧</a>
+          <a href="tel:+85516989848"                  class="social-link" id="social-phone"   aria-label="Phone">📱</a>
+          <a href="https://www.instagram.com/S_Kimhongg" target="_blank" class="social-link" id="social-ig" aria-label="Instagram">📸</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Srean Kimhong. All rights reserved.</span>
+        <span>Made with 🎨 &amp; ❤️ in Cambodia</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
